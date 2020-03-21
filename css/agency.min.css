@@ -62,6 +62,7 @@ h1,h2,h3,h4,h5,h6{
 
 .page-section-blog{
     background-color: #66CC99;
+    
 }
 .page-section-time{
     background-color: #fff;
@@ -828,14 +829,12 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 
 /*Elemontor*/
 
-
 .shape{
     overflow:hidden;
     position:absolute;
     left:0;width:100%;
     line-height:0;
-    direction:ltr;
-    
+    direction:ltr; 
 }
 
 .shape svg{
@@ -860,19 +859,13 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 
 
 .elementor-section{
-    position:relative;
-    
-}
-.element-section{
-    position:relative;
-    
+    position:relative; 
 }
 
 .shape-bottom{bottom:-1px}.shape[data-negative=false].shape-bottom{
     -webkit-transform:rotate(180deg);
     -ms-transform:rotate(180deg);
     transform:rotate(180deg);
-    
 }
 
 .shape-bottom svg{
@@ -886,13 +879,11 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     margin-bottom:0px;
     padding:050px 0px 080px 0px;
     position: relative;
-    
 }
 
 .element-section > .shape-bottom .shape-fill{
     fill:#009999;
 }
-
 
 /**/
 element.style {
@@ -901,14 +892,22 @@ element.style {
     display: flex;
 }
 
-.element-element > .shape-bottom .shape-fill{
-    fill:#66CC99;
+.element-section-blog{
+    transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:050px 0px 080px 0px;
+    position: relative
 }
 
-.element-element > .shape-bottom svg{
+.element-section-blog > .shape-bottom svg{
     width:calc(100% + 1.3px);
     height:35px;
     transform:translateX(-50%) rotateY(180deg);
+}
+
+.element-section-blog > .shape-bottom .shape-fill{
+    fill:#66CC99;
 }
 
 .element-element.element-view-framed .element-icon, .element-element.element-view-default .element-icon{
@@ -925,7 +924,6 @@ element.style {
 .element-element{
     text-align:center;
     margin-top: 15px;
-  
 }
 
 .element-heading-title >a{
@@ -991,4 +989,5 @@ element.style {
 .element-column-wrap .element-element-populated{
     padding: 0px 0px 20px 0px;
     display: flex;
+}
 }
